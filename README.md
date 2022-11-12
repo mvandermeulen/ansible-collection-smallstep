@@ -57,7 +57,6 @@ To learn more about the differences between Online/Offline/Local-Only Modules, s
 | `step_ca_certificate` | Generate a new private key and certificate signed by the CA root certificate | ✅ | `offline` parameter |
 | `step_ca_provisioner` | Manage provisioners on a `step-ca` server | `admin` parameters, [if configured](https://smallstep.com/docs/step-ca/provisioners/#remote-provisioner-management) | ✅ |
 | `step_ca_renew` | Renew a valid certificate | ✅ | `offline` parameter |
-| `step_ca_provisioner_claims` | **DECREPATED!** (use `step_ca_provisioner` instead) Manage provisioner claims | ❌ | ✅ |
 | `step_ca_revoke` | Revoke a Certificate | ✅ | `offline` parameter |
 | `step_ca_token` | Generate an OTT granting access to the CA | ✅ | `offline` parameter |
 
