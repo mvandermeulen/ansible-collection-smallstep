@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  collection-testing: maxhoesel-ansible/ansible-collection-testing@0.3.5
+  collection-testing: maxhoesel-ansible/ansible-collection-testing@0.3.6
 
 jobs:
   modules-sanity:
@@ -34,7 +34,7 @@ workflows:
       - collection-testing/pre-commit-lint
       - collection-testing/antsibull-docs
       - collection-testing/tox-role-scenarios:
-          parallelism: 8
+          parallelism: 16
           resource-class: large
       - collection-testing/publish-github:
           context: collection-publishing
